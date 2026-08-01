@@ -4,37 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clean Code 中文</title>
+    <meta name="description" content="Clean Code 中文版静态阅读页面">
     <style>
-      body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.7; }
-      h1 { margin-bottom: 0.5rem; }
-      ul { padding-left: 1.2rem; }
+      :root { color-scheme: light dark; }
+      body {
+        margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7; background: #f8fafc; color: #0f172a;
+      }
       a { color: #2563eb; text-decoration: none; }
       a:hover { text-decoration: underline; }
+      .page { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; }
+      .hero { background: linear-gradient(135deg, #0f172a, #2563eb); color: white; padding: 32px 36px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+      .hero h1 { margin: 0 0 10px; font-size: 2rem; }
+      .hero p { margin: 0; opacity: 0.95; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+      .card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+      .card h2 { margin-top: 0; font-size: 1.1rem; }
+      .card ul { padding-left: 1.2rem; margin-bottom: 0; }
+      .card li { margin: 6px 0; }
+      .footer { margin-top: 28px; color: #64748b; font-size: 0.95rem; }
+      @media (max-width: 640px) { .page { padding: 20px 16px 60px; } .hero { padding: 24px 20px; } }
     </style>
   </head>
   <body>
-    <h1>Clean Code 中文</h1>
-    <p>这个页面已经整理为可直接在浏览器中打开的静态网页形式。</p>
-    <h2>章节目录</h2>
-    <ul>
-      <li><a href="../cleancode-book/ch1.html">第 1 章 整洁代码</a></li>
-      <li><a href="../cleancode-book/ch2.html">第 2 章 有意义的命名</a></li>
-      <li><a href="../cleancode-book/ch3.html">第 3 章 函数</a></li>
-      <li><a href="../cleancode-book/ch4.html">第 4 章 注释</a></li>
-      <li><a href="../cleancode-book/ch5.html">第 5 章 格式</a></li>
-      <li><a href="../cleancode-book/ch6.html">第 6 章 对象和数据结构</a></li>
-      <li><a href="../cleancode-book/ch7.html">第 7 章 错误处理</a></li>
-      <li><a href="../cleancode-book/ch8.html">第 8 章 边界</a></li>
-      <li><a href="../cleancode-book/ch9.html">第 9 章 单元测试</a></li>
-      <li><a href="../cleancode-book/ch10.html">第 10 章 类</a></li>
-      <li><a href="../cleancode-book/ch11.html">第 11 章 系统</a></li>
-      <li><a href="../cleancode-book/ch12.html">第 12 章 迭进</a></li>
-      <li><a href="../cleancode-book/ch13.html">第 13 章 并发编程</a></li>
-      <li><a href="../cleancode-book/ch14.html">第 14 章 逐步改进</a></li>
-      <li><a href="../cleancode-book/ch15.html">第 15 章 JUnit 内幕</a></li>
-      <li><a href="../cleancode-book/ch16.html">第 16 章 重构 SerialDate</a></li>
-      <li><a href="../cleancode-book/ch17.html">第 17 章 味道与启发</a></li>
-      <li><a href="../cleancode-book/apA.html">附录 A 并发编程 II</a></li>
-    </ul>
+    <div class="page">
+      <div class="hero">
+        <h1>Clean Code 中文</h1>
+        <p>这是一个基于静态文件的 GitHub Pages 风格阅读页面，包含各章节内容入口。</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>章节目录</h2>
+          <ul>
+            <li><a href="./cleancode-book/ch1.html">第 1 章 整洁代码</a></li>
+            <li><a href="./cleancode-book/ch2.html">第 2 章 有意义的命名</a></li>
+            <li><a href="./cleancode-book/ch3.html">第 3 章 函数</a></li>
+            <li><a href="./cleancode-book/ch4.html">第 4 章 注释</a></li>
+            <li><a href="./cleancode-book/ch5.html">第 5 章 格式</a></li>
+            <li><a href="./cleancode-book/ch6.html">第 6 章 对象和数据结构</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>继续阅读</h2>
+          <ul>
+            <li><a href="./cleancode-book/ch7.html">第 7 章 错误处理</a></li>
+            <li><a href="./cleancode-book/ch8.html">第 8 章 边界</a></li>
+            <li><a href="./cleancode-book/ch9.html">第 9 章 单元测试</a></li>
+            <li><a href="./cleancode-book/ch10.html">第 10 章 类</a></li>
+            <li><a href="./cleancode-book/ch11.html">第 11 章 系统</a></li>
+            <li><a href="./cleancode-book/ch12.html">第 12 章 迭进</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>后续章节</h2>
+          <ul>
+            <li><a href="./cleancode-book/ch13.html">第 13 章 并发编程</a></li>
+            <li><a href="./cleancode-book/ch14.html">第 14 章 逐步改进</a></li>
+            <li><a href="./cleancode-book/ch15.html">第 15 章 JUnit 内幕</a></li>
+            <li><a href="./cleancode-book/ch16.html">第 16 章 重构 SerialDate</a></li>
+            <li><a href="./cleancode-book/ch17.html">第 17 章 味道与启发</a></li>
+            <li><a href="./cleancode-book/apA.html">附录 A 并发编程 II</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        这是一个静态网页版本，可直接在浏览器中打开，也可部署到 GitHub Pages。
+      </div>
+    </div>
   </body>
 </html>
